@@ -29,7 +29,7 @@ class showMe(APIView) :
 def get_crypto_data(tabs):
     url = "https://rest.coinapi.io/v1/assets"
     headers = {
-        'X-CoinAPI-Key': "YOUR-API-KEY FROM https://www.coinapi.io/get-free-api-key?product_id=market-data-api"
+        'X-CoinAPI-Key': os.environ.get('COIN_API_KEY')
     }
     response = requests.get(url, headers=headers)
 

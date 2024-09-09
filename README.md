@@ -9,7 +9,6 @@ CryptoTracker is a full-stack web application that displays cryptocurrency data 
 - [Setup Instructions](#setup-instructions)
 - [Running the Application](#running-the-application)
 - [API Key Setup](#api-key-setup)
-- [Deployment](#deployment)
 
 ## Features
 
@@ -115,34 +114,6 @@ COIN_API_KEY=your_coin_api_key
 \`\`\`
 
 Make sure to replace \`your_coin_api_key\` with your actual API key.
-
-## Deployment
-
-### 1. Backend Deployment
-
-1. Set up a production-ready environment (e.g., on a VPS or cloud service like AWS, DigitalOcean, etc.).
-2. Install production dependencies and collect static files:
-
-   \`\`\`bash
-   python manage.py collectstatic
-   \`\`\`
-
-3. Make sure to configure environment variables for production.
-4. Set up a production server (e.g., using **Gunicorn** and **Nginx**) for serving the Django app.
-
-### 2. Frontend Deployment
-
-1. Build the React app for production:
-
-   \`\`\`bash
-   npm run build
-   \`\`\`
-
-   Or with yarn:
-
-   \`\`\`bash
-   yarn build
-   \`\`\`
 
 ## Acknowledgments
 
